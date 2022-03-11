@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Début Menu de navigation-->
+    <div class="container-fluid menu">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="images/group-2.svg" alt="logo" class="logo-img">
+                <span class="logo-text">[Events]</span>
+            </a>
+        </div>
+        <nav>
+            <ul class="">
+                <li class="">
+                    <a class="" href="#"><i class="bi bi-search"></i><span class="textmenu">Search</span></a>
+                </li>
+                <li class="">
+                    <a class="" href="about.html"><i class="bi bi-person"></i><span class="textmenu">About</span></a>
+                </li>
+                <li class="">
+                    <a class="" href=""><i class="bi bi-wifi"></i><span class="textmenu">Blog</span></a>
+                </li>
+                <li class="">
+                    <a class="" href=""><i class="bi bi-list "></i><span class="textmenu">More</span></a>
+                </li>
+            </ul>
+        </nav>
+            
+    </div>
+    <!--Fin Menu de navigation-->
+    <!--Début contenue-->
+        <div class="container-fluid espace"></div>
+        <div class="container-fluid light-gray">
+            <p class="search-filter-title">Filter by location, host, subject, date, daytime</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <label for="Location" class="form-label">Location</label>  
+                        <input type="Location" class="form-control" placeholder="">
+                    </div>
+                    <div class="col-md-1">
+                        <label for="Host" class="form-label">Host</label>
+                        <input type="Host" class="form-control" placeholder="" >
+                    </div>
+                    <div class="col-md-1">
+                        <label for="Subject" class="form-label">Subject</label>
+                        <input type="Subject" class="form-control" placeholder="" >
+                    </div>
+                    <div class="col-md-2">
+                        <label for="" class="form-label">Initial Date</label>
+                        <input type="date" id="start" name="trip-start" class="form-control"
+                                value="2022-03-11"
+                                min="2022-03-11" max="2023-12-31">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="" class="form-label">Final Date</label>
+                        <input type="date" id="start" name="trip-start" class="form-control"
+                                value="2022-03-11"
+                                min="2022-03-11" max="2023-12-31">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="Subject" class="form-label">Daytime</label>
+                        <select class="form-select daytime" aria-label="Default select example">
+                            <option selected>Choose ...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary button-search">Search</button>
+                        <button type="button" class="btn btn-warning button-clear"><i class="bi bi-pencil-square"></i>   Clear filter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="text-search-result">Search Result Foud 7 [Events] Nearby</p>
+            <div class="row">               
+                    <div class="col-xs-12 col-sm-12 col-md-4 result-center">go to [gathering] example</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 result-center">go to [gathering] example</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 result-center">go to [gathering] example</div>
+            </div>
+        </div>
+    <!--Fin contenue-->
+    <!--Début footer-->
+    <footer>
+        <div class="container-fluid footer">
+            <div class="container menufooter">
+                <ul>
+                    <li><a href="">HOME</a>
+                    <li><a href="">SEARCH</a>
+                    <li><a href="">ABOUT US</a>
+                    <li><a href="">ADVERTISE</a>
+                    <li><div class="footer-menu-milieu"><i class="bi bi-geo-alt-fill"></i></div>
+                    <li><a href="">FACEBOOK</a>
+                    <li><a href="">TWITTER</a>
+                    <li><a href="">INSTAGRAM</a>
+                    <li><a href="">BLOG</a>
+                </ul>
+            </div>
+            <div class="row footer-contact" >
+                <div class="col-md-4">
+                    <h3>Subscribe</h3>                    
+                    <div class="form-email">
+                        <input type="text" class="footer-form" placeholder="Insert your email">
+                        <button class="btn btn-outline-secondary mail-envoyer" type="button" >Send</button>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <p>Have a question or sugestion?</p>
+                    <p><a href="mailto:contact@events.com" class="footer-lien">contact@events.com</a></p>
+                        
+                </div>
+                <div class="col-md-4">
+                    <h3>About</h3>
+                    <p>[Events] is an online plataform that works to improve and increase social life conection, when this nightmare taht we are curently living is over <a href="#" class="footer-lien">learn more.</a></p>
+                </div>
+                </div>
+    
+        </div>
+        
+        <div class="container-fluid social-link">
+            <a href="">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+        
+    <!--Fin Footer-->
+</body>
+</html>
